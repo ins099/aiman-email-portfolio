@@ -3,15 +3,46 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section style={{
-      minHeight: '100vh',
+      minHeight: '60vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       padding: '2rem',
       backgroundColor: '#FEFDFD',
-      textAlign: 'center'
+      textAlign: 'center',
+      position: 'relative'
     }}>
+      {/* Decorative Image - Top Right */}
+      <img 
+        src="https://cdn.prod.website-files.com/6549ba20e2cd0407d57858d6/664c227fa244e6479a46b173_28.svg"
+        alt="Decorative element"
+        style={{
+          position: 'absolute',
+          top: '20%',
+          right: '10%',
+          width: '112px',
+          height: 'auto',
+          zIndex: 1,
+          opacity: 0.8
+        }}
+      />
+
+      {/* Decorative Image - Bottom Left */}
+      <img 
+        src="https://cdn.prod.website-files.com/6549ba20e2cd0407d57858d6/6597ad0b6f19659f0eabd00e_67.svg"
+        alt="Decorative element"
+        style={{
+          position: 'absolute',
+          bottom: '25%',
+          left: '8%',
+          width: '130px',
+          height: 'auto',
+          zIndex: 1,
+          opacity: 0.8
+        }}
+      />
+
       {/* Badge */}
       <div style={{
         backgroundColor: '#7BEE9F',
@@ -20,7 +51,9 @@ const Hero: React.FC = () => {
         marginBottom: '0.5rem',
         fontSize: '14px',
         fontWeight: '500',
-        color: '#000'
+        color: '#000',
+        zIndex: 2,
+        position: 'relative'
       }}>
         Email Design & Strategy Specialist
       </div>
@@ -35,6 +68,8 @@ const Hero: React.FC = () => {
         color: '#000',
         maxWidth: '800px',
         margin: '0',
+        zIndex: 2,
+        position: 'relative'
       }}>
         Designing emails people<br />
         actually want to read.
@@ -46,7 +81,11 @@ const Hero: React.FC = () => {
         color: '#6B7280',
         fontWeight: '400',
         maxWidth: '600px',
-        lineHeight: '1.6'
+        lineHeight: '1.6',
+        margin: '0',
+        marginTop: '0.5rem',
+        zIndex: 2,
+        position: 'relative'
       }}>
         Great emails are strategy, storytelling and style in sync.
       </p>
