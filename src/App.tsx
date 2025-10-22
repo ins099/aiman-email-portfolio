@@ -1,20 +1,19 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhatIDo from './components/WhatIDo';
-import Skills from './components/Skills';
-import ImageCarousel from './components/ImageCarousel';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import PortfolioDetail from './components/PortfolioDetail';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <ImageCarousel />
-      <WhatIDo />
-      <Skills />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
