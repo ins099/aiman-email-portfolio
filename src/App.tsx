@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import WhatIDo from './components/WhatIDo';
 import ImageCarousel from './components/ImageCarousel';
 import './App.css';
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <ImageCarousel />
+      <WhatIDo />
     </div>
   );
 }
