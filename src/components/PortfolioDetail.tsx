@@ -46,7 +46,7 @@ const PortfolioDetail: React.FC = () => {
       name: 'Zara',
       type: 'Creative Concepts',
       category: 'creative',
-      image: '/src/assets/portfolioimages/zara.png',
+      image: '/portfolioimages/zara.png',
       description: 'Fashion-forward email designs for Zara\'s fast-fashion collections. The layouts showcase trend-driven content with clean, minimalist aesthetics that align with Zara\'s modern and sophisticated brand identity, emphasizing quick fashion updates and style inspiration.'
     }
   ];
