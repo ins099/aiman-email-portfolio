@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhatIDo from './components/WhatIDo';
+import Skills from './components/Skills';
 import ImageCarousel from './components/ImageCarousel';
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <ImageCarousel />
       <WhatIDo />
+      <Skills />
     </div>
   );
 }
