@@ -19,28 +19,28 @@ const Portfolio: React.FC = () => {
             name: 'Drunk Elephant',
             type: 'Client Work',
             category: 'client',
-            image: '/src/assets/portfolioimages/drunk-elephant.png'
+            image: '/portfolioimages/drunk-elephant.png'
         },
         {
             id: 2,
             name: 'Nike',
             type: 'Client Work',
             category: 'client',
-            image: '/src/assets/portfolioimages/nike.png'
+            image: '/portfolioimages/nike.png'
         },
         {
             id: 3,
             name: 'UGG',
             type: 'Client Work',
             category: 'client',
-            image: '/src/assets/portfolioimages/ugg.png'
+            image: '/portfolioimages/ugg.png'
         },
         {
             id: 4,
             name: 'Zara',
             type: 'Creative Concepts',
             category: 'creative',
-            image: '/src/assets/portfolioimages/zara.png'
+            image: '/portfolioimages/zara.png'
         }
     ];
 

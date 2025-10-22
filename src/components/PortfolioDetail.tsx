@@ -22,7 +22,7 @@ const PortfolioDetail: React.FC = () => {
       name: 'Drunk Elephant',
       type: 'Client Work',
       category: 'client',
-      image: '/src/assets/portfolioimages/drunk-elephant.png',
+      image: '/portfolioimages/drunk-elephant.png',
       description: 'A comprehensive email marketing campaign for Drunk Elephant skincare products, focusing on clean beauty and sustainable packaging. The design emphasizes the brand\'s commitment to effective, non-toxic skincare solutions with a modern, minimalist aesthetic that resonates with conscious consumers.'
     },
     {
@@ -30,7 +30,7 @@ const PortfolioDetail: React.FC = () => {
       name: 'Nike',
       type: 'Client Work',
       category: 'client',
-      image: '/src/assets/portfolioimages/nike.png',
+      image: '/portfolioimages/nike.png',
       description: 'Dynamic email campaigns for Nike featuring athletic performance and lifestyle content. The design captures the energy and motivation that Nike represents, with bold typography, action-oriented imagery, and compelling calls-to-action that drive engagement and conversions.'
     },
     {
@@ -38,7 +38,7 @@ const PortfolioDetail: React.FC = () => {
       name: 'UGG',
       type: 'Client Work',
       category: 'client',
-      image: '/src/assets/portfolioimages/ugg.png',
+      image: '/portfolioimages/ugg.png',
       description: 'Cozy and comfortable email designs for UGG footwear and accessories. The campaigns highlight warmth, comfort, and seasonal fashion, creating an inviting atmosphere that reflects the brand\'s core values of quality, comfort, and timeless style.'
     },
     {
