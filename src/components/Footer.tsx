@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer style={{
-      background: 'linear-gradient(135deg, #00002D 0%, #00001A 100%)',
+      background: '#C0D8C0',
       padding: '4rem 2rem 2rem',
       marginTop: '4rem'
     }}>
@@ -19,16 +19,16 @@ const Footer: React.FC = () => {
           <h2 style={{
             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
             fontWeight: '700',
-            color: '#FFFFFF',
+            color: '#000',
             marginBottom: '1.5rem',
-            fontFamily: 'Degular, sans-serif',
+            fontFamily: 'Poppins, sans-serif',
             lineHeight: '1.2'
           }}>
             Let's work together
           </h2>
           <p style={{
             fontSize: '1.125rem',
-            color: '#B0B0B0',
+            color: '#000',
             lineHeight: '1.7',
             maxWidth: '700px',
             margin: '0 0 2rem 0',
@@ -36,17 +36,17 @@ const Footer: React.FC = () => {
           }}>
             Whether you're a brand looking to level up your email game or a company that wants to connect better with your audience, I'd love to help. Reach out via{' '}
             <a 
-              href="https://linkedin.com/in/aiman" 
+              href="https://linkedin.com/in/aimaniqbal1" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: '#FF6B35',
+                color: '#DD4A48',
                 textDecoration: 'none',
                 fontWeight: '500',
                 transition: 'color 0.3s ease'
               }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#FF8C69'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#FF6B35'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#DD4A48'}
             >
               LinkedIn
             </a>
@@ -63,30 +63,30 @@ const Footer: React.FC = () => {
           flexWrap: 'wrap'
         }}>
           <a 
-            href="mailto:contact@aiman.com" 
+            href="mailto:aimaniqbal53@gmail.com" 
             style={{
-              color: '#B0B0B0',
+              color: '#000',
               textDecoration: 'none',
               fontSize: '0.95rem',
-              transition: 'color 0.3s ease'
+              // transition: 'color 0.3s ease'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#FF6B35'}
-            onMouseLeave={(e) => e.currentTarget.style.color = '#B0B0B0'}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           >
             Email Me
           </a>
           <a 
-            href="https://linkedin.com/in/aiman" 
+            href="https://linkedin.com/in/aimaniqbal1" 
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: '#B0B0B0',
+              color: '#000',
               textDecoration: 'none',
               fontSize: '0.95rem',
-              transition: 'color 0.3s ease'
+              // transition: 'color 0.3s ease'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#FF6B35'}
-            onMouseLeave={(e) => e.currentTarget.style.color = '#B0B0B0'}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           >
             LinkedIn
           </a>
@@ -99,10 +99,10 @@ const Footer: React.FC = () => {
         }}>
           <p style={{
             fontSize: '0.875rem',
-            color: '#808080',
+            color: '#000',
             margin: '0'
           }}>
-            © 2024 Aiman Iqbal. All rights reserved.
+            © 2025 Aiman Iqbal. All rights reserved.
           </p>
         </div>
       </div>

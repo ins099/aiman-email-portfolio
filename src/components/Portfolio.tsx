@@ -53,7 +53,7 @@ const Portfolio: React.FC = () => {
     const tabs = ['All', 'Client Work', 'Creative Concepts'];
 
     return (
-        <section style={{
+        <section id="portfolio" style={{
             padding: '4rem 2rem',
             backgroundColor: '#FEFDFD',
             maxWidth: '1200px',
@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
                         marginBottom: '1rem',
                         textTransform: 'uppercase',
                         letterSpacing: '1px',
-                        fontFamily: 'Degular, sans-serif',
+                        fontFamily: 'Poppins, sans-serif',
                         margin: '0 0 1rem 0'
                     }}>
                         Portfolio
@@ -99,7 +99,7 @@ const Portfolio: React.FC = () => {
                             border: 'none',
                             fontSize: '1rem',
                             fontWeight: '500',
-                            color: activeTab === tab ? '#FF6B35' : '#6B7280',
+                            color: activeTab === tab ? '#DD4A48' : '#6B7280',
                             cursor: 'pointer',
                             padding: '0.5rem 0',
                             transition: 'color 0.3s ease',
@@ -107,7 +107,7 @@ const Portfolio: React.FC = () => {
                         }}
                         onMouseEnter={(e) => {
                             if (activeTab !== tab) {
-                                e.currentTarget.style.color = '#FF6B35';
+                                e.currentTarget.style.color = '#DD4A48';
                             }
                         }}
                         onMouseLeave={(e) => {

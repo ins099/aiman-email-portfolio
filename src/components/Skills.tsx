@@ -16,17 +16,17 @@ const Skills: React.FC = () => {
     {
       id: 2,
       name: 'Klaviyo',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/klaviyo/klaviyo-original.svg'
+      icon: '/images/klavio.png'
     },
     {
       id: 3,
       name: 'MailChimp',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mailchimp/mailchimp-original.svg'
+      icon: '/images/mailchimp.png'
     },
     {
       id: 4,
       name: 'HubSpot',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hubspot/hubspot-original.svg'
+      icon: '/images/hubspot.png'
     },
     {
       id: 5,
@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section style={{
+    <section id="skills" style={{
       padding: '4rem 2rem',
       backgroundColor: '#FEFDFD',
       maxWidth: '1200px',
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
             marginBottom: '1rem',
             textTransform: 'uppercase',
             letterSpacing: '1px',
-            fontFamily: 'Degular, sans-serif',
+            fontFamily: 'Poppins, sans-serif',
             margin: '0 0 1rem 0'
           }}>
             Skill Set
@@ -83,7 +83,7 @@ const Skills: React.FC = () => {
             lineHeight: '1.7',
             margin: '0'
           }}>
-            I believe great emails are a balance of creativity, strategy, and psychology. From coming up with ideas and designing layouts in Figma, to planning the right strategy, writing copy that connects, and looking at the data after every send. I've done it all. Each email has taught me how design, words, and timing work together to grab attention and build trust. I love seeing that mix of creativity and strategy come to life in the inbox.
+            Great emails don’t just look good, they make people feel something. I combine creativity, strategy, and psychology to make that happen. From ideas and design in Figma to copy that connects and data that drives results, I’ve worked on every part of the process. Each email is a chance to grab attention, build trust, and turn strategy into impact.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ const Skills: React.FC = () => {
                       <div style="
                         width: 32px; 
                         height: 32px; 
-                        background: #FF6B35; 
+                        background: #DD4A48; 
                         border-radius: 6px; 
                         display: flex; 
                         align-items: center; 

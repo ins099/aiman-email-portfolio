@@ -3,18 +3,19 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section style={{
-      minHeight: '60vh',
+      minHeight: '80vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       padding: '2rem',
       backgroundColor: '#FEFDFD',
+      gap: '30px',
       textAlign: 'center',
       position: 'relative'
     }}>
       {/* Decorative Image - Top Right */}
-      <img 
+      {/* <img 
         src="https://cdn.prod.website-files.com/6549ba20e2cd0407d57858d6/664c227fa244e6479a46b173_28.svg"
         alt="Decorative element"
         style={{
@@ -28,7 +29,6 @@ const Hero: React.FC = () => {
         }}
       />
 
-      {/* Decorative Image - Bottom Left */}
       <img 
         src="https://cdn.prod.website-files.com/6549ba20e2cd0407d57858d6/6597ad0b6f19659f0eabd00e_67.svg"
         alt="Decorative element"
@@ -40,12 +40,12 @@ const Hero: React.FC = () => {
           height: 'auto',
           zIndex: 1,
           opacity: 0.8
-        }}
-      />
+        }} */}
+      {/* /> */}
 
       {/* Badge */}
       <div style={{
-        backgroundColor: '#7BEE9F',
+        backgroundColor: '#BADFDB',
         padding: '0.5rem 1rem',
         borderRadius: '25px',
         marginBottom: '0.5rem',
@@ -60,8 +60,8 @@ const Hero: React.FC = () => {
 
       {/* Main Heading */}
       <h1 style={{
-        fontFamily: 'Degular, sans-serif',
-        fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+        fontFamily: 'Montserrat, sans-serif',
+        fontSize: 'clamp(2.0rem, 4.5vw, 3.5rem)',
         fontWeight: '700',
         lineHeight: '1.2',
         // marginBottom: '0.75rem',
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         zIndex: 2,
         position: 'relative'
       }}>
-        Designing emails people<br />
+        Designing emails people
         actually want to read.
       </h1>
 

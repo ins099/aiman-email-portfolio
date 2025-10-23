@@ -10,11 +10,44 @@ const Navbar: React.FC = () => {
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
     setIsMobileMenuOpen(false);
+    
+    // Scroll to the respective section
+    let sectionId = '';
+    switch (tab) {
+      case 'What do I do':
+        sectionId = 'what-i-do';
+        break;
+      case 'Skills':
+        sectionId = 'skills';
+        break;
+      case 'Portfolio':
+        sectionId = 'portfolio';
+        break;
+      case 'Contact me':
+        sectionId = 'footer';
+        break;
+      default:
+        return;
+    }
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   };
 
   const handleDownloadResume = () => {
-    // You can replace this with actual resume download logic
-    console.log('Download resume clicked');
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/resume/aiman-iqbal-resume.pdf';
+    link.download = 'Aiman-Iqbal-Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -42,15 +75,17 @@ const Navbar: React.FC = () => {
           alignItems: 'center',
           gap: '1rem',
           flex: '1'
-        }}>
-          <LinkedinOutlined 
-            style={{ 
-              fontSize: '24px', 
+        }}
+          onClick={() => window.open('https://linkedin.com/in/aimaniqbal1', '_blank')}
+        >
+          <LinkedinOutlined
+            style={{
+              fontSize: '24px',
               color: '#000',
               cursor: 'pointer',
               transition: 'color 0.3s ease'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#FF6B35'}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
             onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           />
           <button
@@ -88,9 +123,10 @@ const Navbar: React.FC = () => {
           letterSpacing: '1px',
           position: 'absolute',
           left: '50%',
-          transform: 'translateX(-50%)'
+          transform: 'translateX(-50%)',
+          fontFamily: 'Poppins, sans-serif'
         }}>
-          Aiman Iqbal
+          aiman iqbal
         </div>
 
         {/* Right side - Desktop tabs */}
@@ -110,14 +146,14 @@ const Navbar: React.FC = () => {
                 border: 'none',
                 fontSize: '16px',
                 fontWeight: '500',
-                color: activeTab === tab ? '#FF6B35' : '#000',
+                color: activeTab === tab ? '#DD4A48' : '#000',
                 cursor: 'pointer',
                 padding: '0.5rem 0',
                 transition: 'color 0.3s ease'
               }}
               onMouseEnter={(e) => {
                 if (activeTab !== tab) {
-                  e.currentTarget.style.color = '#FF6B35';
+                  e.currentTarget.style.color = '#DD4A48';
                 }
               }}
               onMouseLeave={(e) => {
@@ -147,7 +183,7 @@ const Navbar: React.FC = () => {
               transition: 'transform 0.3s ease'
             }}
           >
-            <MenuOutlined style={{ 
+            <MenuOutlined style={{
               transform: isMobileMenuOpen ? 'rotate(90deg)' : 'rotate(0deg)',
               transition: 'transform 0.3s ease'
             }} />
@@ -178,7 +214,7 @@ const Navbar: React.FC = () => {
               border: 'none',
               fontSize: '18px',
               fontWeight: '500',
-              color: activeTab === tab ? '#FF6B35' : '#000',
+              color: activeTab === tab ? '#DD4A48' : '#000',
               cursor: 'pointer',
               padding: '1rem 0',
               textAlign: 'left',
@@ -187,7 +223,7 @@ const Navbar: React.FC = () => {
             }}
             onMouseEnter={(e) => {
               if (activeTab !== tab) {
-                e.currentTarget.style.color = '#FF6B35';
+                e.currentTarget.style.color = '#DD4A48';
               }
             }}
             onMouseLeave={(e) => {

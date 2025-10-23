@@ -69,7 +69,7 @@ const PortfolioDetail: React.FC = () => {
             <button 
               onClick={() => navigate('/')}
               style={{
-                backgroundColor: '#FF6B35',
+                backgroundColor: '#DD4A48',
                 color: 'white',
                 border: 'none',
                 padding: '0.75rem 1.5rem',
@@ -126,8 +126,8 @@ const PortfolioDetail: React.FC = () => {
               gap: '0.5rem'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#FF6B35';
-              e.currentTarget.style.color = '#FF6B35';
+              e.currentTarget.style.borderColor = '#DD4A48';
+              e.currentTarget.style.color = '#DD4A48';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = '#E5E7EB';
@@ -157,7 +157,7 @@ const PortfolioDetail: React.FC = () => {
             fontWeight: '700',
             color: '#000',
             marginBottom: '1.5rem',
-            fontFamily: 'Degular, sans-serif',
+            fontFamily: 'Poppins, sans-serif',
             lineHeight: '1.2'
           }}>
             {item.name}
