@@ -68,56 +68,56 @@ const PortfolioDetail: React.FC = () => {
     {
       id: 8,
       name: 'Nike',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/nike.png'
     },
     {
       id: 9,
       name: 'Zara',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/zara.png'
     },
     {
       id: 10,
       name: 'Drunk Elephant',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/drunk-elephant.png'
     },
     {
       id: 11,
       name: 'UGG',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/UGG.png'
     },
     {
       id: 12,
       name: 'UGG',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/UGG-2.png'
     },
     {
       id: 13,
       name: 'Happy Socks',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/happy-socks.png'
     },
     {
       id: 14,
       name: 'Milk Cosmetics',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/milk-cosmetics.png'
     },
     {
       id: 15,
       name: 'The Ordinary',
-      type: 'Creative Concepts',
+      type: 'Promotional',
       category: 'creative',
       image: '/portfolioimages/creative/the-ordinary.png'
     }
