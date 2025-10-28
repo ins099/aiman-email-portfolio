@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{
+    <footer id='footer' style={{
       background: '#C0D8C0',
       padding: '4rem 2rem 2rem',
       marginTop: '4rem'

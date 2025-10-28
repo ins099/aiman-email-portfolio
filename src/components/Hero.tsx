@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
       {/* Badge */}
       <div style={{
-        backgroundColor: '#BADFDB',
+        backgroundColor: '#C0D8C0',
         padding: '0.5rem 1rem',
         borderRadius: '25px',
         marginBottom: '0.5rem',

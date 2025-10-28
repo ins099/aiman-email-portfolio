@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
     setIsMobileMenuOpen(false);
-    
+
     // Scroll to the respective section
     let sectionId = '';
     switch (tab) {
@@ -29,10 +29,10 @@ const Navbar: React.FC = () => {
       default:
         return;
     }
-    
+
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = '/resume/aiman-iqbal-resume.pdf';
-    link.download = 'Aiman-Iqbal-Resume.pdf';
+    link.download = 'Aiman Iqbal Resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           gap: '1rem',
           flex: '1'
         }}
-          onClick={() => window.open('https://linkedin.com/in/aimaniqbal1', '_blank')}
+
         >
           <LinkedinOutlined
             style={{
@@ -85,6 +85,7 @@ const Navbar: React.FC = () => {
               cursor: 'pointer',
               transition: 'color 0.3s ease'
             }}
+            onClick={() => window.open('https://linkedin.com/in/aimaniqbal1', '_blank')}
             onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
             onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           />
