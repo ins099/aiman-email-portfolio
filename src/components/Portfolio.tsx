@@ -129,7 +129,7 @@ const Portfolio: React.FC = () => {
             activeTab === 'Client Work' ? item.category === 'client' : item.category === 'creative'
         );
 
-    const tabs = ['All', 'Client Work', 'Promotional'];
+    const tabs = ['All', 'Client Work', 'Creative Concepts'];
 
     return (
         <section id="portfolio" style={{
