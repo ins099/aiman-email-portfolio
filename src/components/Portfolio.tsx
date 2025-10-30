@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { logPortfolioView } from '../analytics';
 
 interface PortfolioItem {
     id: number;
@@ -211,7 +212,10 @@ const Portfolio: React.FC = () => {
                 {filteredItems.map((item) => (
                     <div
                         key={item.id}
-                        onClick={() => navigate(`/portfolio/${item.id}`)}
+                        onClick={() => {
+                            logPortfolioView(item.name);
+                            navigate(`/portfolio/${item.id}`);
+                        }}
                         style={{
                             backgroundColor: '#FEFDFD',
                             border: '1px solid #E5E7EB',

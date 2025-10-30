@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { LinkedinOutlined, MenuOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, MenuOutlined, DownloadOutlined } from '@ant-design/icons';
+import { logResumeDownload, logLinkedInClick, logContactTabClick } from '../analytics';
 
 const Navbar: React.FC = () => {
   const [activeTab, setActiveTab] = useState('What do I do');
@@ -24,6 +25,7 @@ const Navbar: React.FC = () => {
         sectionId = 'portfolio';
         break;
       case 'Contact me':
+        logContactTabClick();
         sectionId = 'footer';
         break;
       default:
@@ -40,6 +42,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleDownloadResume = () => {
+    logResumeDownload();
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = '/resume/aiman-iqbal-resume.pdf';
@@ -85,7 +88,10 @@ const Navbar: React.FC = () => {
               cursor: 'pointer',
               transition: 'color 0.3s ease'
             }}
-            onClick={() => window.open('https://linkedin.com/in/aimaniqbal1', '_blank')}
+            onClick={() => {
+              logLinkedInClick('navbar');
+              window.open('https://linkedin.com/in/aimaniqbal1', '_blank');
+            }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
             onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           />
@@ -112,6 +118,7 @@ const Navbar: React.FC = () => {
               e.currentTarget.style.color = '#000';
             }}
           >
+            <DownloadOutlined className="download-icon" style={{ fontSize: '16px' }} />
             <span className="download-text">Download Resume</span>
           </button>
         </div>
@@ -238,7 +245,7 @@ const Navbar: React.FC = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes slideDown {
           from {
             opacity: 0;
@@ -273,7 +280,7 @@ const Navbar: React.FC = () => {
 
         @media (max-width: 768px) {
           .download-resume-btn {
-            padding: 0.5rem !important;
+            padding: 0.25rem !important;
             border-radius: 50% !important;
             width: 40px !important;
             height: 40px !important;
@@ -282,10 +289,8 @@ const Navbar: React.FC = () => {
             justify-content: center !important;
           }
 
-          .download-resume-btn::after {
-            content: "↓";
-            font-size: 16px;
-            font-weight: bold;
+          .download-icon {
+            display: block !important;
           }
 
           .download-text {
@@ -297,8 +302,14 @@ const Navbar: React.FC = () => {
           .mobile-menu-button {
             display: none !important;
           }
+        }
 
-          .download-resume-btn::after {
+        .download-icon {
+          display: none;
+        }
+
+        @media (min-width: 769px) {
+          .download-icon {
             display: none !important;
           }
         }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { logEmailClick, logLinkedInClick } from '../analytics';
 
 const Footer: React.FC = () => {
   return (
@@ -45,6 +46,7 @@ const Footer: React.FC = () => {
                 fontWeight: '500',
                 transition: 'color 0.3s ease'
               }}
+              onClick={() => logLinkedInClick('footer')}
               onMouseEnter={(e) => e.currentTarget.style.color = '#FF8C69'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#DD4A48'}
             >
@@ -70,6 +72,7 @@ const Footer: React.FC = () => {
               fontSize: '0.95rem',
               // transition: 'color 0.3s ease'
             }}
+            onClick={() => logEmailClick('footer')}
             onMouseEnter={(e) => e.currentTarget.style.color = '#DD4A48'}
             onMouseLeave={(e) => e.currentTarget.style.color = '#000'}
           >
