@@ -129,6 +129,49 @@ export const portfolioItems: PortfolioItem[] = [
     image: "/portfolioimages/creative/the-ordinary.png",
   },
 
+  {
+    id: 25,
+    name: "Blunt Cases",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/blunt-cases.png",
+  },
+  {
+    id: 26,
+    name: "GBOF",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/gbof.png",
+  },
+  {
+    id: 27,
+    name: "Im'peccable",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/impeccable.png",
+  },
+  {
+    id: 28,
+    name: "Im'peccable",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/impeccable2.png",
+  },
+  {
+    id: 29,
+    name: "Koia",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/koia.png",
+  },
+  {
+    id: 30,
+    name: "Luxe",
+    type: "Promotional",
+    category: "creative",
+    image: "/portfolioimages/creative/luxe.png",
+  },
+
   // Client Work
   {
     id: 1,
